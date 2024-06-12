@@ -1,0 +1,118 @@
+@font-face {
+  font-family: martianMono;
+  src: url(../font/martianMono.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: martianMono, "Courier New", Courier, monospace;
+  color: white;
+  background: transparent;
+}
+
+html {
+  background: url(../images/win.jpg);
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.upper {
+  padding: 15px 0 10px 15px;
+}
+
+div.upper h1 {
+  display: inline;
+}
+
+div.upper nav {
+  padding-top: 12.5px;
+  float: right;
+}
+
+div.upper nav a:nth-child(2) {
+  display: inline;
+  padding: 0 50px 0 0;
+}
+
+div.upper nav a:nth-child(1) {
+  display: inline;
+  padding: 0 40px;
+}
+
+div.upper nav a,
+div.upper a {
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+div.upper nav a:hover {
+  color: aqua;
+}
+
+nav.side {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5vh;
+}
+
+nav img {
+  object-fit: contain;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s ease;
+}
+
+nav img:nth-child(-n+6) {
+  padding: 0 10px 20px 0;
+}
+
+nav img:hover {
+  transform: translate(-10px);
+  cursor: pointer;
+}
+
+dialog {
+  border: black 2px solid;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  text-align: center;
+  padding: 12px;
+  margin-left: 10px;
+}
+
+dialog h2 {
+  padding-bottom: 15px;
+}
+
+dialog p {
+  font-size: small;
+  max-width: 50ch;
+  text-align: justify;
+  padding-bottom: 10px;
+}
+
+dialog button {
+  padding: 3px;
+}
+
+div.main {
+  position: absolute;
+  right: 40%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+}
+
+div.main img {
+  object-fit: contain;
+  width: 500px;
+  height: 500px;
+}
+
+div.main img:nth-last-child(-n+6) {
+  display: none;
+}

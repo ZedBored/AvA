@@ -1,0 +1,43 @@
+@font-face {
+  font-family: martianMono;
+  src: url(../font/martianMono.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: martianMono, 'Courier New', Courier, monospace;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  padding: 20px 0 0 0;
+}
+
+p {
+  max-width: 60ch;
+  margin: auto;
+}
+
+.first {
+  padding: 80px 0 20px 0;
+}
+
+.last {
+  padding: 0 0 40px 0;
+}
+
+button {
+  border-width: 6px;
+  border-color: black;
+  padding: 5px;
+  transition: 0.22s ease;
+}
+
+button:hover{
+  color: aquamarine;
+  cursor: pointer;
+  padding: 10px;
+}
